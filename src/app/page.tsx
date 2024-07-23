@@ -51,7 +51,7 @@ export default function Home() {
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
               >
                 <span className="sr-only">Open main menu</span>
-                <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+                <Bars3Icon aria-hidden="true" className="h-6 w-6"  color="#fff"/>
               </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
@@ -72,13 +72,13 @@ export default function Home() {
             className="lg:hidden"
           >
             <div className="fixed inset-0 z-50" />
-            <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <DialogPanel className="menu-mobile fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white">
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Your Company</span>
+                  <span className="sr-only">Logo</span>
                   <Image
-                    alt=""
-                    src="https://tailwindui.com/Image/logos/mark.svg?color=indigo&shade=600"
+                    alt="Logo Easy"
+                    src={Logo}
                     width={150}
                     height={50}
                     className="h-8 w-auto"
@@ -90,7 +90,7 @@ export default function Home() {
                   className="-m-2.5 rounded-md p-2.5 text-gray-700"
                 >
                   <span className="sr-only">Close menu</span>
-                  <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+                  <XMarkIcon aria-hidden="true" className="h-6 w-6" color="#fff" />
                 </button>
               </div>
               <div className="mt-6 flow-root">
@@ -100,7 +100,7 @@ export default function Home() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-teal-300"
                       >
                         {item.name}
                       </a>
