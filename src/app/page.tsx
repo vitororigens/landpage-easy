@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react';
+import { Dialog, DialogPanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Logo from './../assets/logo.png';
 import Personagem01 from './../assets/personagem01.svg';
 import Personagem02 from './../assets/homem-vestindo-camiseta-gesticulando 1.png';
@@ -11,7 +11,8 @@ import ButtonGoogle from './../assets/button02.png';
 import Phone from './../assets/phone.png';
 import './styles.css';
 import 'animate.css';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,9 +32,11 @@ export default function Home() {
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
+                <Image
                   alt="Logo Easy"
-                  src={Logo.src}
+                  src={Logo}
+                  width={150}
+                  height={50}
                   className="h-8 w-auto"
                 />
               </a>
@@ -62,9 +65,11 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Your Company</span>
-                  <img
+                  <Image
                     alt=""
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src="https://tailwindui.com/Image/logos/mark.svg?color=indigo&shade=600"
+                    width={150}
+                    height={50}
                     className="h-8 w-auto"
                   />
                 </a>
@@ -90,14 +95,12 @@ export default function Home() {
                       </a>
                     ))}
                   </div>
-
                 </div>
               </div>
             </DialogPanel>
           </Dialog>
         </header>
         <div className='flex flex-col lg:flex-row mt-10 lg:mt-20 justify-between items-center px-20'>
-
           <div className='flex justify-center items-center p-20 w-full lg:w-1/2'>
             <motion.div
               whileHover={{ scale: [null, 1.3, 1.2] }}
@@ -114,18 +117,16 @@ export default function Home() {
               </p>
             </motion.div>
           </div>
-
           <div className='flex justify-center items-end mt-10 lg:mt-0 w-full lg:w-1/2'>
-            <img
+            <Image
               alt="Personagem segurando celular com tela do Easy"
-              src={Personagem01.src}
+              src={Personagem01}
               width={2032}
               height={1842}
               className="sm:w-[50rem] md:-ml-4 lg:-ml-0"
             />
           </div>
         </div>
-
       </div>
       <div id="o-easy">
         <div className='flex flex-col lg:flex-row mt-20 justify-between items-center px-5 lg:px-20'>
@@ -134,9 +135,9 @@ export default function Home() {
               whileHover={{ scale: [null, 1.3, 1.2] }}
               transition={{ duration: 0.3 }}
             >
-              <img
+              <Image
                 alt="Telefone com a tela do Easy"
-                src={Phone.src}
+                src={Phone}
                 width={600}
                 height={800}
               />
@@ -190,9 +191,11 @@ export default function Home() {
               whileHover={{ scale: [null, 1.3, 1.2] }}
               transition={{ duration: 0.3 }}
             >
-              <img
+              <Image
                 alt="Logo Easy"
-                src={Logo.src}
+                src={Logo}
+                width={150}
+                height={50}
                 className="w-full max-w-[150px] m-10"
               />
             </motion.div>
@@ -201,9 +204,11 @@ export default function Home() {
                 whileHover={{ scale: [null, 1.3, 1.2] }}
                 transition={{ duration: 0.3 }}
               >
-                <img
+                <Image
                   alt="Botão de acesso a loja Apple"
-                  src={ButtonApple.src}
+                  src={ButtonApple}
+                  width={150}
+                  height={50}
                   className="w-[150px] m-5"
                 />
               </motion.div>
@@ -211,23 +216,26 @@ export default function Home() {
                 whileHover={{ scale: [null, 1.3, 1.2] }}
                 transition={{ duration: 0.3 }}
               >
-                <img
+                <Image
                   alt="Botão de acesso a loja Google"
-                  src={ButtonGoogle.src}
+                  src={ButtonGoogle}
+                  width={150}
+                  height={50}
                   className="w-[150px] m-5"
                 />
               </motion.div>
             </div>
           </div>
           <div className='flex justify-center items-end mt-10 lg:mt-0 self-end'>
-            <img
+            <Image
               alt="Pessoa segurando um celular"
-              src={Personagem02.src}
+              src={Personagem02}
+              width={600}
+              height={600}
               className="w-full max-w-[600px]"
             />
           </div>
         </div>
-
       </div>
       <div className='flex flex-col lg:flex-row items-center justify-center p-5  lg:p-20 w-full' id="contato">
         <div className='flex flex-col justify-center items-center p-10 lg:p-20 w-full lg:w-1/2'>
@@ -249,13 +257,15 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <footer className=" shadow">
+      <footer className="shadow">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <a href="#home" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-              <img
+              <Image
                 alt="Logo Easy"
-                src={Logo.src}
+                src={Logo}
+                width={150}
+                height={50}
                 className="h-8 w-auto"
               />
             </a>
