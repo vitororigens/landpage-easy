@@ -1,10 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "./../assets/logo.png";
-import Personagem01 from "./../assets/personagem01.svg";
 import Personagem02 from "./../assets/homem-vestindo-camiseta-gesticulando 1.png";
 import ButtonApple from "./../assets/button01.png";
 import ButtonGoogle from "./../assets/button02.png";
@@ -13,178 +9,16 @@ import "./styles.css";
 import "animate.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Home } from "./Home";
+import { About } from "./About";
 
-export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+export default function App() {
 
-  const navigation = [
-    { name: "Home", href: "#home" },
-    { name: "O Easy", href: "#o-easy" },
-    { name: "Baixar", href: "#baixar" },
-    { name: "Contato", href: "#contato" },
-  ];
 
   return (
-    <main>
-      <div className="bg-violet-300" id="home">
-        <header className="absolute inset-x-0 top-0 z-50">
-          <nav
-            aria-label="Global"
-            className="flex items-center justify-between lg:px-8 w-full max-w-screen-xl mx-auto p-4 md:py-8"
-          >
-            <div className="flex lg:flex-1">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <Image
-                  alt="Logo Easy"
-                  src={Logo}
-                  width={150}
-                  height={50}
-                  className="h-8 w-auto"
-                />
-              </a>
-            </div>
-            <div className="flex lg:hidden">
-              <button
-                type="button"
-                onClick={() => setMobileMenuOpen(true)}
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              >
-                <span className="sr-only">Open main menu</span>
-                <Bars3Icon aria-hidden="true" className="h-6 w-6"  color="#fff"/>
-              </button>
-            </div>
-            <div className="hidden lg:flex lg:gap-x-12">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-sm font-semibold leading-6 text-white"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          </nav>
-          <Dialog
-            open={mobileMenuOpen}
-            onClose={setMobileMenuOpen}
-            className="lg:hidden"
-          >
-            <div className="fixed inset-0 z-50" />
-            <DialogPanel className="menu-mobile fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white">
-              <div className="flex items-center justify-between">
-                <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Logo</span>
-                  <Image
-                    alt="Logo Easy"
-                    src={Logo}
-                    width={150}
-                    height={50}
-                    className="h-8 w-auto"
-                  />
-                </a>
-                <button
-                  type="button"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                >
-                  <span className="sr-only">Close menu</span>
-                  <XMarkIcon aria-hidden="true" className="h-6 w-6" color="#fff" />
-                </button>
-              </div>
-              <div className="mt-6 flow-root">
-                <div className="-my-6 divide-y divide-gray-500/10">
-                  <div className="space-y-2 py-6">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-teal-300"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </DialogPanel>
-          </Dialog>
-        </header>
-        <div className="flex flex-col lg:flex-row mt-10 lg:mt-20 justify-between items-center px-20">
-          <div className="flex justify-center items-center p-20 w-full lg:w-1/2">
-            <motion.div
-              whileHover={{ scale: [null, 1.3, 1.2] }}
-              transition={{ duration: 0.3 }}
-            >
-              <p className="animate__animated animate__fadeInLeft font-normal text-center lg:text-left text-3xl text-white">
-                O App perfeito para
-                <br />
-                <span className="font-bold text-4xl">
-                  gerenciar sua vida Financeira e <br />
-                  seu dia a dia.
-                </span>
-              </p>
-            </motion.div>
-          </div>
-          <div className="flex justify-center items-end mt-10 lg:mt-0 w-full lg:w-1/2">
-            <Image
-              alt="Personagem segurando celular com tela do Easy"
-              src={Personagem01}
-              width={2032}
-              height={1842}
-              className="sm:w-[50rem] md:-ml-4 lg:-ml-0"
-            />
-          </div>
-        </div>
-      </div>
-      <div id="o-easy">
-        <div className="flex flex-col lg:flex-row mt-20 justify-between items-center px-5 lg:px-20">
-          <div className="flex justify-center items-center mt-10 lg:mt-0">
-            <motion.div
-              whileHover={{ scale: [null, 1.3, 1.2] }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                alt="Telefone com a tela do Easy"
-                src={Phone}
-                width={600}
-                height={800}
-              />
-            </motion.div>
-          </div>
-          <div className="flex flex-col justify-center items-center p-5 lg:p-20 w-full lg:w-1/2">
-            <motion.div
-              whileHover={{ scale: [null, 1.3, 1.2] }}
-              transition={{ duration: 0.3 }}
-            >
-              <p className="animate__animated animate__fadeInRight font-bold text-center lg:text-left  text-4xl text-black m-10">
-                Você no controle da sua Vida.
-              </p>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: [null, 1.3, 1.2] }}
-              transition={{ duration: 0.3 }}
-            >
-              <p className="animate__animated animate__fadeInRight text-base text-center lg:text-left ">
-                Com o Easy, você terá total controle sobre sua vida financeira.
-                <br />
-                Crie notas rápidas para anotar informações importantes,
-                <br />
-                mantenha listas de tarefas para nunca esquecer seus
-                <br />
-                compromissos e gerencie suas despesas com nosso mercado,
-                <br />
-                controlando seus gastos mensais. Além disso, acompanhe seu
-                <br />
-                desenvolvimento financeiro com gráficos detalhados e intuitivos.
-                <br />
-                Simplifique sua vida e alcance suas metas com o Easy!
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </div>
+    <main >
+      <Home/>
+      <About/>
       <div className="bg-teal-200" id="baixar">
         <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:px-20 mt-20">
           <div className="flex flex-col justify-center items-center p-10 lg:p-20 w-full lg:w-1/2">
