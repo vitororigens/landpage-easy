@@ -3,13 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     background-blend-mode: overlay; 
-    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
-    max-width: 900px;
-    height: 100%;
+    background-color: #f5f5f5;
+    padding: 100px;
     margin: 0 auto;
     @media (max-width: 768px) {
         height: auto; 
@@ -17,11 +15,20 @@ export const Container = styled.div`
     }
 `;
 
+export const Content = styled.div`
+        display: flex;;
+        max-width: 900px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+`;
+
 export const ContentDivider = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;

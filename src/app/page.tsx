@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Home } from "./Home";
 import { About } from "./About";
+import { Solutions } from "./Solutions";
+import { Depoiments } from "./Depoiments";
 
 export default function App() {
 
@@ -19,71 +21,8 @@ export default function App() {
     <main >
       <Home/>
       <About/>
-      <div className="bg-teal-200" id="baixar">
-        <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:px-20 mt-20">
-          <div className="flex flex-col justify-center items-center p-10 lg:p-20 w-full lg:w-1/2">
-            <motion.div
-              whileHover={{ scale: [null, 1.3, 1.2] }}
-              transition={{ duration: 0.3 }}
-            >
-              <p className="font-normal text-center text-3xl text-black">
-                <span className="animate__animated animate__fadeIn font-bold text-4xl">
-                  Facil, Rapido <br />e Gratuito.
-                </span>
-                <br />
-                Baixe agora nas lojas oficiais
-              </p>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: [null, 1.3, 1.2] }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                alt="Logo Easy"
-                src={Logo}
-                width={150}
-                height={50}
-                className="w-full max-w-[150px] m-10"
-              />
-            </motion.div>
-            <div className="flex flex-col lg:flex-row">
-              <motion.div
-                whileHover={{ scale: [null, 1.3, 1.2] }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  alt="Botão de acesso a loja Apple"
-                  src={ButtonApple}
-                  width={150}
-                  height={50}
-                  className="w-[150px] m-5"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: [null, 1.3, 1.2] }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  alt="Botão de acesso a loja Google"
-                  src={ButtonGoogle}
-                  width={150}
-                  height={50}
-                  className="w-[150px] m-5"
-                />
-              </motion.div>
-            </div>
-          </div>
-          <div className="flex justify-center items-end mt-10 lg:mt-0 self-end">
-            <Image
-              alt="Pessoa segurando um celular"
-              src={Personagem02}
-              width={600}
-              height={600}
-              className="w-full max-w-[600px]"
-            />
-          </div>
-        </div>
-      </div>
+      <Solutions/>
+      <Depoiments/>
       <div
         className="flex flex-col lg:flex-row items-center justify-center p-5  lg:p-20 w-full"
         id="contato"

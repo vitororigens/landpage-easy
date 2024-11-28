@@ -17,8 +17,8 @@ export function Header() {
     const navigation = [
         { name: "Home", href: "#home" },
         { name: "Sobre o App", href: "#about" },
-        { name: "Soluções", href: "#solucoes" },
-        { name: "Depoimentos", href: "#solutions" },
+        { name: "Soluções", href: "#solutions" },
+        { name: "Depoimentos", href: "#depoiments" },
         { name: "FAQ", href: "#faq" },
         { name: "Contato", href: "#contact" },
     ];
