@@ -25,21 +25,23 @@ export function Header() {
     useEffect(() => {
         const sections = document.querySelectorAll("section");
         const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                const id = entry.target.getAttribute("id");
-                setActiveNav(id.charAt(0).toUpperCase() + id.slice(1)); 
-              }
-            });
-          },
-          { threshold: 0.6 }
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute("id");
+                        if (id) { // Verificação adicionada
+                            setActiveNav(id.charAt(0).toUpperCase() + id.slice(1));
+                        }
+                    }
+                });
+            },
+            { threshold: 0.6 }
         );
-      
+    
         sections.forEach((section) => observer.observe(section));
-      
+    
         return () => observer.disconnect();
-      }, []);
+    }, []);    
       
     return (
         <header className="absolute inset-x-0 top-0 z-50">

@@ -1,5 +1,5 @@
 import { NavFooter } from "@/components/NavFooter";
-import { Container, Content, ContentItems, Items } from "./styles.module";
+import { Container, Content, ContentItems, Items } from "./styles";
 import ButtonApple from "./../../assets/button01.png";
 import ButtonGoogle from "./../../assets/button02.png";
 import Image from "next/image";

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "next/image";
+
 
 export const Container = styled.div`
     display: flex;
@@ -94,12 +94,4 @@ export const BodySlide = styled.div`
     display: flex;
     flex: 1;
     flex-direction: column;
-`;
-
-export const ImageContainer = styled(Image)`
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;  
-    margin-bottom: 10px;  
 `;

@@ -1,8 +1,9 @@
-import { Container, Content, ContentDivider, Divider, Slide, ContentSlide, HeaderSlide, BodySlide, Image, ImageContainer } from "./styles.module";
+import { Container, Content, ContentDivider, Divider, Slide, ContentSlide, HeaderSlide, BodySlide } from "./styles";
 import Homem01 from "./../../assets/homem01.jpg";
 import Homem02 from "./../../assets/homem02.jpg";
 import Mulher01 from "./../../assets/mulher01.jpg";
 import Mulher02 from "./../../assets/mulher02.jpg";
+import Image from "next/image";
 
 export function Depoiments() {
     const data = [
@@ -42,7 +43,15 @@ export function Depoiments() {
                     {data.map((item, index) => (
                         <Slide key={index}>
                             <HeaderSlide>
-                                <ImageContainer src={item.image} alt={item.name} />
+                                <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                                    <Image
+                                        src={item.image}
+                                        alt={item.name}
+                                        width={96}
+                                        height={96}
+                                        className="object-cover"
+                                    />
+                                </div>
                                 <h1 className="text-sky-950 text-2xl font-sans tracking-wider text-center">
                                     {item.name}
                                 </h1>

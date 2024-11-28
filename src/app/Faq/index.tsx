@@ -8,7 +8,7 @@ import {
     Divider,
     AccordionButton,
     AccordionBody,
-} from "./styles.module";
+} from "./styles";
 
 export function Faq() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);

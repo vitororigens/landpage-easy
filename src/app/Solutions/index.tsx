@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Phone from "./../../assets/iPhone-14-Pro-Mockup2.png";
-import { Header } from "../Header";
+import { Header } from "../../components/Header";
 import {
     Container,
     Content,
@@ -16,7 +16,7 @@ import {
     Items,
     RadioButton,
     Slide,
-} from "./styles.module";
+} from "./styles";
 
 export function Solutions() {
     const [currentIndex, setCurrentIndex] = useState(0);

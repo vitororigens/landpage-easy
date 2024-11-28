@@ -1,4 +1,4 @@
-import { Container, Content, LeftSide, RightSide, SidebarIcon } from "./styles.module";
+import { Container, Content, LeftSide, RightSide, SidebarIcon } from "./styles";
 import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export function NavFooter() {
