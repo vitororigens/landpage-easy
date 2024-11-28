@@ -108,6 +108,7 @@ export const ContentIconArrow = styled.div`
 
     @media (max-width: 768px) {
         height: 60px; 
+        display: none;
     }
 `;
 

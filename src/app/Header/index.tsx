@@ -7,7 +7,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "./../../assets/logo.png";
 import "./styles.css";
 import "animate.css";
-import { motion } from "framer-motion";
 import Image from "next/image";
 export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

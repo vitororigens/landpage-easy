@@ -73,6 +73,10 @@ export const ContentSlide = styled.div`
     overflow-x: hidden;
     justify-content: center;
     width: 100%;  
+
+    @media (max-width: 768px) {
+       flex-direction: column;
+    }
 `;
 
 

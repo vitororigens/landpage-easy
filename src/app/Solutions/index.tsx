@@ -16,7 +16,7 @@ import {
     Items,
     RadioButton,
     Slide,
-} from "./styles";
+} from "./styles.module";
 
 export function Solutions() {
     const [currentIndex, setCurrentIndex] = useState(0);

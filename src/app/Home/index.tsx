@@ -3,12 +3,12 @@
 import Phone from "./../../assets/iPhone-14-Pro-Mockup.png";
 import ButtonApple from "./../../assets/button01.png";
 import ButtonGoogle from "./../../assets/button02.png";
-import "./styles.ts";
+import "./styles.module.ts";
 import "animate.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Header } from "../Header";
-import { Container, Content, ContentDivider, ContentIconArrow, ContentImage, ContentLeft, ContentRight, ContentText, Divider, SidebarIcon } from "./styles";
+import { Container, Content, ContentDivider, ContentIconArrow, ContentImage, ContentLeft, ContentRight, ContentText, Divider, SidebarIcon } from "./styles.module";
 import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -42,7 +42,7 @@ export function Home() {
                                 manter o controle do dinheiro em cada etapa da sua jornada financeira.
                             </p>
                             <div className="flex justify-center lg:justify-start gap-4 mt-8">
-                                <button>
+                                <a>
                                     <Image
                                         src={ButtonApple}
                                         alt="App Store"
@@ -50,8 +50,8 @@ export function Home() {
                                         height={50}
                                         className="inline-block mr-2"
                                     />
-                                </button>
-                                <button>
+                                </a>
+                                <a>
                                     <Image
                                         src={ButtonGoogle}
                                         alt="Google Play"
@@ -60,7 +60,7 @@ export function Home() {
                                         className="inline-block mr-2"
                                     />
 
-                                </button>
+                                </a>
                             </div>
                         </motion.div>
 

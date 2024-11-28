@@ -1,4 +1,4 @@
-import { Container, Content, ContentDivider, Divider, Slide, ContentSlide, HeaderSlide, BodySlide, Image, ImageContainer } from "./styles";
+import { Container, Content, ContentDivider, Divider, Slide, ContentSlide, HeaderSlide, BodySlide, Image, ImageContainer } from "./styles.module";
 import Homem01 from "./../../assets/homem01.jpg";
 import Homem02 from "./../../assets/homem02.jpg";
 import Mulher01 from "./../../assets/mulher01.jpg";

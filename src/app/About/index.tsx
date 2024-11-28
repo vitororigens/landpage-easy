@@ -3,14 +3,14 @@
 import Phone from "./../../assets/iPhone-14-Pro-Mockup.png";
 import ButtonApple from "./../../assets/button01.png";
 import ButtonGoogle from "./../../assets/button02.png";
-import "./styles.ts";
+import "./styles.module.ts";
 import "animate.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Header } from "../Header";
 import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
-import { Container, Content, ContentDivider, Divider } from "./styles";
+import { Container, Content, ContentDivider, Divider } from "./styles.module";
 
 export function About() {
     return (
