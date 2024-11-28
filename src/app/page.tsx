@@ -13,6 +13,7 @@ import { Home } from "./Home";
 import { About } from "./About";
 import { Solutions } from "./Solutions";
 import { Depoiments } from "./Depoiments";
+import { Faq } from "./Faq";
 
 export default function App() {
 
@@ -23,39 +24,7 @@ export default function App() {
       <About/>
       <Solutions/>
       <Depoiments/>
-      <div
-        className="flex flex-col lg:flex-row items-center justify-center p-5  lg:p-20 w-full"
-        id="contato"
-      >
-        <div className="flex flex-col justify-center items-center p-10 lg:p-20 w-full lg:w-1/2">
-          <motion.div
-            whileHover={{ scale: [null, 1.3, 1.2] }}
-            transition={{ duration: 0.3 }}
-          >
-            <p className="animate__animated animate__fadeIn font-bold text-2xl lg:text-4xl text-black text-center">
-              Fique por dentro <br />
-              das novidades
-            </p>
-          </motion.div>
-        </div>
-        <div className="flex flex-col lg:flex-row m-10 w-full justify-between items-center lg:w-1/2">
-          <label htmlFor="email" className="sr-only">
-            E-mail
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autoComplete="email"
-            required
-            className="w-full flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 mb-4 lg:mb-0"
-            placeholder="E-mail"
-          />
-          <button className="w-full rounded-md py-2 px-4 bg-violet-300 text-white">
-            Inscrever-se
-          </button>
-        </div>
-      </div>
+      <Faq/>
       <footer className="shadow">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
