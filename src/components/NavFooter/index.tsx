@@ -17,17 +17,14 @@ export function NavFooter() {
                     </LeftSide>
                     <RightSide>
 
-                    <SidebarIcon>
+                    <SidebarIcon target="_blank" href="https://wa.me/556696315835">
                         <FaWhatsapp size={20} color="#ffffff" />
                     </SidebarIcon>
-                    <SidebarIcon>
+                    <SidebarIcon target="_blank" href="https://www.instagram.com/glow.app.br">
                         <FaInstagram size={20} color="#ffffff" />
                     </SidebarIcon>
-                    <SidebarIcon>
+                    <SidebarIcon target="_blank" href="https://www.facebook.com/profile.php?id=61566382270643">
                         <FaFacebook size={20} color="#ffffff" />
-                    </SidebarIcon>
-                    <SidebarIcon>
-                        <FaLinkedin size={20} color="#ffffff" />
                     </SidebarIcon>
                     </RightSide>
                 </Content>

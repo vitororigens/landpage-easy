@@ -43,19 +43,19 @@ export function Footer() {
                     <h1 className="text-sky-950 text-sm font-sans uppercase tracking-wider font-bold">
                             Navegue
                         </h1>
-                        <a className="text-purple-700 text-sm font-sans tracking-wider">
+                        <a href="#home" className="text-purple-700 text-sm font-sans tracking-wider">
                             Home
                         </a>
-                        <a className="text-purple-700 text-sm font-sans tracking-wider">
+                        <a href="#about" className="text-purple-700 text-sm font-sans tracking-wider">
                             Sobre o App
                         </a>
-                        <a className="text-purple-700 text-sm font-sans tracking-wider">
+                        <a href="#solutions" className="text-purple-700 text-sm font-sans tracking-wider">
                             Soluções
                         </a>
-                        <a className="text-purple-700 text-sm font-sans tracking-wider">
+                        <a href="#depoiments" className="text-purple-700 text-sm font-sans tracking-wider">
                             Depoimentos
                         </a>
-                        <a className="text-purple-700 text-sm font-sans tracking-wider">
+                        <a href="#faq" className="text-purple-700 text-sm font-sans tracking-wider">
                             FAQ
                         </a>
                     </Items>
@@ -63,21 +63,19 @@ export function Footer() {
                     <h1 className="text-sky-950 text-sm font-sans uppercase tracking-wider font-bold">
                             Informações de contato
                         </h1>
-                        <a className="text-purple-700 text-sm font-sans tracking-wider">
-                            Home
+                        <a className="text-slate-700 text-sm font-sans tracking-wider">
+                            E-Mail:
                         </a>
                         <a className="text-purple-700 text-sm font-sans tracking-wider">
-                            Sobre o App
+                        contato@useoeasy.com.br
+                        </a>
+                        <a className="text-slate-700  text-sm font-sans tracking-wider">
+                        Whatsapp:
                         </a>
                         <a className="text-purple-700 text-sm font-sans tracking-wider">
-                            Soluções
+                        +55 66 99631-5835
                         </a>
-                        <a className="text-purple-700 text-sm font-sans tracking-wider">
-                            Depoimentos
-                        </a>
-                        <a className="text-purple-700 text-sm font-sans tracking-wider">
-                            FAQ
-                        </a>
+                      
                     </Items>
                 </ContentItems>
             </Content>

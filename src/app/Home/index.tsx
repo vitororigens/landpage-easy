@@ -26,20 +26,19 @@ export function Home() {
                             transition={{ duration: 0.5 }}
                         >
                             <ContentDivider>
-                            <h1 className="text-white text-sm font-sans uppercase tracking-wider">
-                                Use o Easy
-                            </h1>
-                            <Divider/>
+                                <h1 className="text-white text-sm font-sans uppercase tracking-wider">
+                                    Easy Finanças Pessoais
+                                </h1>
+                                <Divider />
                             </ContentDivider>
                             <h2 className="text-white font-medium text-2xl lg:text-5xl mt-4 leading-tight">
-                                Controle suas <br />
-                                finanças de forma <br />
-                                <span className="text-teal-300">prática e segura</span>
+
+                                <span className="text-teal-300">Easy</span> muito além
+                                <br /> de um simples controle financeiro.
                             </h2>
                             <p className="text-white  mt-6 text-base font-sans leading-relaxed">
-                                Com o Easy, você acompanha seus gastos, define metas e organiza seu dinheiro de
-                                forma fácil. Com uma interface intuitiva e ferramentas poderosas, ajudamos você a
-                                manter o controle do dinheiro em cada etapa da sua jornada financeira.
+                            O Easy é o app ideal para organizar suas finanças pessoais. Perfeito para casais e famílias, ele simplifica o controle do orçamento e dos gastos, 
+                            além de oferecer recursos como lista de compras, tarefas, bloco de notas e compartilhamento de todas as funções.
                             </p>
                             <div className="flex justify-center lg:justify-start gap-4 mt-8">
                                 <a>
@@ -84,22 +83,19 @@ export function Home() {
 
                 </ContentLeft>
                 <ContentRight>
-                    <SidebarIcon>
+                    <SidebarIcon target="_blank" href="https://wa.me/556696315835">
                         <FaWhatsapp size={20} color="#ffffff" />
                     </SidebarIcon>
-                    <SidebarIcon>
+                    <SidebarIcon target="_blank" href="https://www.instagram.com/glow.app.br">
                         <FaInstagram size={20} color="#ffffff" />
                     </SidebarIcon>
-                    <SidebarIcon>
+                    <SidebarIcon target="_blank" href="https://www.facebook.com/profile.php?id=61566382270643">
                         <FaFacebook size={20} color="#ffffff" />
-                    </SidebarIcon>
-                    <SidebarIcon>
-                        <FaLinkedin size={20} color="#ffffff" />
                     </SidebarIcon>
                 </ContentRight>
             </Content>
             <ContentIconArrow>
-            <IoIosArrowDown size={90} color="#ffffff" />
+                <IoIosArrowDown size={90} color="#ffffff" />
             </ContentIconArrow>
         </Container>
     );

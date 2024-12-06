@@ -23,36 +23,32 @@ export function Solutions() {
 
     const data = [
         {
-            title: "Monitoramento em Tempo Real",
-            subTitle: "Tenha uma visão clara e instantânea de todos os seus gastos e receitas. Use o Easy para acompanhar cada transação à medida que ela ocorre, facilitando o controle diário das suas finanças e ajudando você a se manter dentro do seu orçamento.",
-            text: "Cada centavo no seu radar, a qualquer hora."
+            title: "Lista de compras de supermercado",
+            subTitle: "O Easy é o aplicativo ideal para quem busca organizar suas compras de maneira prática e eficiente. Crie listas detalhadas com informações como quantidade, preço, categoria e observações para cada item. Além disso, compartilhe suas listas com familiares ou amigos, facilitando a colaboração na hora de fazer compras.",
+            text: "Organize suas compras com facilidade."
         },
         {
-            title: "Definição de Metas Financeiras",
-            subTitle: "Trace metas personalizadas e acompanhe seu progresso. Seja para poupar para uma viagem, quitar dívidas ou apenas aumentar sua reserva de emergência, o Easy ajuda você a visualizar e atingir seus objetivos de forma prática e motivadora.",
-            text: "Trace metas, acompanhe seu progresso e realize seus sonhos."
+            title: "Lista de tarefas",
+            subTitle: "Com o Easy, organizar suas tarefas diárias nunca foi tão simples. Crie e acompanhe atividades, defina lembretes para não perder nenhum compromisso e compartilhe suas listas com outras pessoas. Ideal para gerenciar responsabilidades em família, no trabalho ou no dia a dia, o Easy mantém você produtivo e no controle.",
+            text: "Torne sua rotina mais organizada."
         },
         {
-            title: "Relatórios Detalhados e Insights",
-            subTitle: "Descubra para onde seu dinheiro está indo. Com relatórios gráficos e insights personalizados, o Easy oferece uma análise detalhada dos seus hábitos de consumo, permitindo que você tome decisões mais inteligentes e planeje melhor seu orçamento.",
-            text: "Entenda seus gastos e faça seu dinheiro trabalhar para você."
+            title: "Despesas e receitas com gráficos",
+            subTitle: "Tenha controle total sobre suas finanças com o Easy. Registre seus gastos fixos, como aluguel e contas, e variáveis, como supermercado e lazer. Visualize gráficos detalhados para entender melhor seus hábitos financeiros e tome decisões mais conscientes para otimizar seu orçamento.",
+            text: "Controle suas finanças de forma inteligente."
         },
         {
-            title: "Alertas de Gastos e Notificações",
-            subTitle: "Nunca mais se surpreenda com os gastos. Receba alertas personalizados para acompanhar de perto seus gastos e evitar excessos. Com o Easy, você define limites de gastos e recebe notificações quando estiver se aproximando deles, mantendo o controle em todas as situações.",
-            text: "Seus gastos sob controle, com alertas que te mantêm informado."
+            title: "Bloco de notas",
+            subTitle: "O Easy oferece um bloco de anotações prático para registrar ideias, lembretes e informações importantes. Mantenha tudo organizado em um só lugar e acesse facilmente sempre que precisar. Seja para anotar uma tarefa ou uma inspiração, o bloco de notas do Easy é seu aliado no dia a dia.",
+            text: "Guarde suas ideias e lembretes."
         },
         {
-            title: "Personalização Completa",
-            subTitle: "O Easy se adapta a você! Organize categorias de gastos, personalize seu painel e ajuste as funcionalidades para criar uma experiência única e sob medida para suas necessidades financeiras.",
-            text: "Um app que se adapta ao seu estilo financeiro."
-        },
-        {
-            title: "Lista de Compras",
-            subTitle: "Organize suas compras e mantenha-se dentro do orçamento! Com a funcionalidade de lista de compras do Easy, você planeja suas compras de forma prática, adiciona itens com facilidade e monitora os gastos enquanto faz compras. Além disso, visualize o total estimado em tempo real para que cada ida ao mercado se encaixe nas suas metas financeiras.",
-            text: "Planeje suas compras e economize de verdade."
+            title: "Cofrinho",
+            subTitle: "Com a função cofrinho do Easy, guardar dinheiro e alcançar seus objetivos financeiros ficou mais fácil. Economize de forma prática e organizada para compras, viagens ou emergências. Simplifique suas economias com um app que se adapta ao seu estilo financeiro.",
+            text: "Economize e alcance seus objetivos."
         }
     ];
+
 
 
     const handleManualScroll = (index: number) => {
