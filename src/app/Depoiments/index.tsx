@@ -1,70 +1,70 @@
-import { Container, Content, ContentDivider, Divider, Slide, ContentSlide, HeaderSlide, BodySlide } from "./styles";
-import Homem01 from "./../../assets/homem01.jpg";
-import Homem02 from "./../../assets/homem02.jpg";
-import Mulher01 from "./../../assets/mulher01.jpg";
-import Mulher02 from "./../../assets/mulher02.jpg";
-import Image from "next/image";
+import { Container, Content, ContentDivider, Divider, ImageContainer, ColumnRight, ColumnLeft, ContentItems, Items, ContainerItems } from "./styles";
+import Image01 from "./../../assets/O6fm1WN3H.png";
+import { TbChartInfographic } from "react-icons/tb";
+import { AiOutlineDollar } from "react-icons/ai";
+import { FaChartPie } from "react-icons/fa";
+
+
 
 export function Depoiments() {
-    const data = [
-        {
-            image: Homem01,
-            name: "Camila Andrade",
-            testimonial: "O Easy foi um divisor de águas para mim. Eu sempre acabava gastando mais do que devia, mas agora sei exatamente para onde meu dinheiro está indo. É incrível ver pequenas mudanças fazendo toda diferença!"
-        },
-        {
-            image: Homem02,
-            name: "Roberto Souza",
-            testimonial: "Estava tentando economizar para fazer uma viagem dos sonhos, mas nunca conseguia manter o foco. Com o Easy, defini minha meta e fui acompanhando o progresso dia a dia."
-        },
-        {
-            image: Mulher01,
-            name: "Ana Martins",
-            testimonial: "Antes, eu nem sabia quanto gastava em pequenos itens no dia a dia. Com os relatórios detalhados do Easy, comecei a ver um padrão e ajustei meu orçamento."
-        },
-        {
-            image: Mulher02,
-            name: "Gustavo Duarte",
-            testimonial: "Eu precisava de algo que fosse fácil de usar e que me passasse segurança. No Easy, encontrei exatamente isso. O aplicativo é muito intuitivo! Já recomendei para vários amigos!"
-        }
-    ];
+
 
     return (
         <Container id="depoiments">
-            <Content>
+            <ContainerItems>
                 <ContentDivider>
                     <Divider />
                     <h1 className="text-sky-950 text-sm font-sans uppercase tracking-wider">
-                        DEPOIMENTOS
+                        Recursos
                     </h1>
                     <Divider />
                 </ContentDivider>
-                <ContentSlide>
-                    {data.map((item, index) => (
-                        <Slide key={index}>
-                            <HeaderSlide>
-                                <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-                                    <Image
-                                        src={item.image}
-                                        alt={item.name}
-                                        width={96}
-                                        height={96}
-                                        className="object-cover"
-                                    />
-                                </div>
-                                <h1 className="text-sky-950 text-2xl font-sans tracking-wider text-center">
-                                    {item.name}
+                <Content>
+                    <ColumnLeft>
+                        <h1 className="text-sky-950 text-3xl font-sans text-center uppercase tracking-wider">
+                            Total controle de gastos na palma da sua mão
+                        </h1>
+                        <ImageContainer src={Image01} alt="Mulher analisando suas finanças no celular" />
+                    </ColumnLeft>
+                    <ColumnRight>
+                        <ContentItems>
+                            <TbChartInfographic size={40} color="#1E3A8A" />
+                            <Items>
+                                <h1 className="text-sky-950 text-xl font-sans uppercase tracking-wider">
+                                    Controle suas contas
                                 </h1>
-                            </HeaderSlide>
-                            <BodySlide>
-                                <p className="text-sky-950 font-sans text-sm mt-4 text-center">
-                                    {item.testimonial}
+                                <p className="text-sky-950 text-sm font-sans">
+                                    Tenha total controle de seus gastos, com gráficos e relatórios detalhados.
                                 </p>
-                            </BodySlide>
-                        </Slide>
-                    ))}
-                </ContentSlide>
-            </Content>
+                            </Items>
+                        </ContentItems>
+                        <ContentItems>
+                            <AiOutlineDollar size={40} color="#1E3A8A" />
+                            <Items>
+                                <h1 className="text-sky-950 text-xl font-sans uppercase tracking-wider">
+                                    Tenha diversas ferramentas
+                                </h1>
+                                <p className="text-sky-950 text-sm font-sans">
+                                    Lista de mercado, lista de tarefas, notas e muito mais.
+                                </p>
+                            </Items>
+                        </ContentItems>
+                        <ContentItems>
+                            <FaChartPie size={40} color="#1E3A8A" />
+                            <Items>
+                                <h1 className="text-sky-950 text-xl font-sans uppercase tracking-wider">
+                                    Acompanhe seu desempenho
+                                </h1>
+                                <p className="text-sky-950 text-sm font-sans">
+
+                                    Entenda sua economia mensal, descubra como você se saiu e tenha acesso a gráficos e relatórios
+
+                                </p>
+                            </Items>
+                        </ContentItems>
+                    </ColumnRight>
+                </Content>
+            </ContainerItems>
         </Container>
     );
 }

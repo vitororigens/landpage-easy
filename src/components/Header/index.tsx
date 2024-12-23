@@ -17,7 +17,7 @@ export function Header() {
         { name: "Home", href: "#home" },
         { name: "Sobre o App", href: "#about" },
         { name: "Soluções", href: "#solutions" },
-        { name: "Depoimentos", href: "#depoiments" },
+        { name: "Recursos", href: "#depoiments" },
         { name: "FAQ", href: "#faq" },
         { name: "Contato", href: "#contact" },
     ];

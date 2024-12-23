@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 
@@ -10,18 +11,34 @@ export const Container = styled.div`
     background-color: #f5f5f5;
     padding: 100px;
     margin: 0 auto;
+    height: 100vh;
     @media (max-width: 768px) {
         height: auto; 
         padding: 20px;
     }
 `;
 
+export const ContainerItems = styled.div`
+    display: flex;
+    max-width: 900px;
+    height: 100%;
+    flex-direction: column;
+`;
+
 export const Content = styled.div`
     display: flex;
     max-width: 900px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 100px;
+
+      @media (max-width: 768px) {
+        height: auto; 
+        padding: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 `;
 
 export const ContentDivider = styled.div`
@@ -65,33 +82,47 @@ export const Slide = styled.div`
     }
 `;
 
-export const ContentSlide = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 10px;
-    overflow-x: hidden;
-    justify-content: center;
-    width: 100%;  
 
+export const ColumnRight = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
     @media (max-width: 768px) {
-       flex-direction: column;
+        gap: 20px;
+    }
+`;
+
+export const ColumnLeft = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    @media (max-width: 768px) {
+        gap: 20px;
     }
 `;
 
 
-export const HeaderSlide = styled.div`
-    width: 100%;  
-    padding-left: 20px;
-    padding-right: 20px;	
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    justify-content: center;
+export const ImageContainer = styled(Image)`
+    width: 400px;
+    border-radius: 10px;
 `;
 
-export const BodySlide = styled.div`
+export const ContentItems = styled.div`
+    flex-direction: row;
     display: flex;
-    flex: 1;
+    gap: 20px;
+    align-items: flex-start;
+    
+`;
+
+export const Items = styled.div`
+    display: flex;
     flex-direction: column;
+    gap: 20px;
 `;
