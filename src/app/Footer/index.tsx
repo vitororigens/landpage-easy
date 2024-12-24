@@ -5,6 +5,9 @@ import ButtonGoogle from "./../../assets/button02.png";
 import Image from "next/image";
 
 export function Footer() {
+    const loaderProp = ({ src }: { src: string }) => {
+        return src;
+    };
     return (
         <Container>
             <Content>
@@ -20,6 +23,7 @@ export function Footer() {
                         <div className="flex justify-center lg:justify-start gap-4 mt-8">
                         <a>
                             <Image
+                            loader={loaderProp}
                                 src={ButtonApple}
                                 alt="App Store"
                                 width={150}
@@ -29,6 +33,7 @@ export function Footer() {
                         </a>
                         <a>
                             <Image
+                            loader={loaderProp}
                                 src={ButtonGoogle}
                                 alt="Google Play"
                                 width={150}

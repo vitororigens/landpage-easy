@@ -7,7 +7,9 @@ import { FaChartPie } from "react-icons/fa";
 
 
 export function Depoiments() {
-
+    const loaderProp = ({ src }: { src: string }) => {
+        return src;
+    };
 
     return (
         <Container id="depoiments">
@@ -24,7 +26,7 @@ export function Depoiments() {
                         <h1 className="text-sky-950 text-3xl font-sans text-center uppercase tracking-wider">
                             Total controle de gastos na palma da sua mão
                         </h1>
-                        <ImageContainer src={Image01} alt="Mulher analisando suas finanças no celular" />
+                        <ImageContainer loader={loaderProp} src={Image01} alt="Mulher analisando suas finanças no celular" />
                     </ColumnLeft>
                     <ColumnRight>
                         <ContentItems>

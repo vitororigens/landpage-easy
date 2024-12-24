@@ -20,10 +20,10 @@ export function NavFooter() {
                     <SidebarIcon target="_blank" href="https://wa.me/556696315835">
                         <FaWhatsapp size={20} color="#ffffff" />
                     </SidebarIcon>
-                    <SidebarIcon target="_blank" href="https://www.instagram.com/glow.app.br">
+                    <SidebarIcon target="_blank" href="https://www.instagram.com/useoeasy/profilecard/?igsh=MXZqM3NncWk5djk1eA==">
                         <FaInstagram size={20} color="#ffffff" />
                     </SidebarIcon>
-                    <SidebarIcon target="_blank" href="https://www.facebook.com/profile.php?id=61566382270643">
+                    <SidebarIcon target="_blank" href="https://www.facebook.com/share/19Uo4H1V9K/">
                         <FaFacebook size={20} color="#ffffff" />
                     </SidebarIcon>
                     </RightSide>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Phone from "./../../assets/iPhone-14-Pro-Mockup2.png";
@@ -20,6 +20,9 @@ import {
 
 export function Solutions() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const loaderProp = ({ src }: { src: string }) => {
+        return src;
+    };
 
     const data = [
         {
@@ -123,6 +126,7 @@ export function Solutions() {
                             width={400}
                             height={400}
                             className="drop-shadow-2xl"
+                            loader={loaderProp}
                         />
                     </motion.div>
                 </ContentImage>

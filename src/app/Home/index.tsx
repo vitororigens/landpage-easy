@@ -14,6 +14,9 @@ import { IoIosArrowDown } from "react-icons/io";
 
 
 export function Home() {
+    const loaderProp = ({ src }: { src: string }) => {
+        return src;
+    };
     return (
         <Container id="home" >
             <Header />
@@ -43,6 +46,7 @@ export function Home() {
                             <div className="flex justify-center lg:justify-start gap-4 mt-8">
                                 <a>
                                     <Image
+                                        loader={loaderProp}
                                         src={ButtonApple}
                                         alt="App Store"
                                         width={150}
@@ -52,6 +56,7 @@ export function Home() {
                                 </a>
                                 <a>
                                     <Image
+                                        loader={loaderProp}
                                         src={ButtonGoogle}
                                         alt="Google Play"
                                         width={150}
@@ -72,6 +77,7 @@ export function Home() {
                             transition={{ duration: 0.5 }}
                         >
                             <Image
+                                loader={loaderProp}
                                 alt="iPhone exibindo o aplicativo Easy"
                                 src={Phone}
                                 width={900}
@@ -86,10 +92,10 @@ export function Home() {
                     <SidebarIcon target="_blank" href="https://wa.me/556696315835">
                         <FaWhatsapp size={20} color="#ffffff" />
                     </SidebarIcon>
-                    <SidebarIcon target="_blank" href="https://www.instagram.com/glow.app.br">
+                    <SidebarIcon target="_blank" href="https://www.instagram.com/useoeasy/profilecard/?igsh=MXZqM3NncWk5djk1eA==">
                         <FaInstagram size={20} color="#ffffff" />
                     </SidebarIcon>
-                    <SidebarIcon target="_blank" href="https://www.facebook.com/profile.php?id=61566382270643">
+                    <SidebarIcon target="_blank" href="https://www.facebook.com/share/19Uo4H1V9K/">
                         <FaFacebook size={20} color="#ffffff" />
                     </SidebarIcon>
                 </ContentRight>

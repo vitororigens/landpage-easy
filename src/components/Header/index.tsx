@@ -11,7 +11,9 @@ import Image from "next/image";
 export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeNav, setActiveNav] = useState("Home");
-
+    const loaderProp = ({ src }: { src: string }) => {
+        return src;
+    };
 
     const navigation = [
         { name: "Home", href: "#home" },
@@ -53,6 +55,7 @@ export function Header() {
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <Image
+                            loader={loaderProp}
                             alt="Logo Easy"
                             src={Logo}
                             width={150}
@@ -100,6 +103,7 @@ export function Header() {
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Logo</span>
                             <Image
+                                loader={loaderProp}
                                 alt="Logo Easy"
                                 src={Logo}
                                 width={150}
