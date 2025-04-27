@@ -46,10 +46,10 @@ export function Solutions() {
             text: "Guarde suas ideias e lembretes."
         },
         {
-            title: "Cofrinho",
-            subTitle: "Com a função cofrinho do Easy, guardar dinheiro e alcançar seus objetivos financeiros ficou mais fácil. Economize de forma prática e organizada para compras, viagens ou emergências. Simplifique suas economias com um app que se adapta ao seu estilo financeiro.",
+            title: "Gerenciador de assinaturas",
+            subTitle: "Com o Gerenciador de Assinaturas do Easy, você organiza seus gastos com serviços como Netflix, Spotify e outros. Controle suas assinaturas em um só lugar, evitando surpresas no seu orçamento.",
             text: "Economize e alcance seus objetivos."
-        }
+        }        
     ];
 
 
@@ -61,7 +61,7 @@ export function Solutions() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
-        }, 5000);
+        }, 7000);
 
         return () => clearInterval(interval);
     }, [data.length]);
@@ -115,20 +115,13 @@ export function Solutions() {
                 </ContentText>
 
                 <ContentImage>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5 }}
-                    >
                         <Image
                             alt="iPhone exibindo o aplicativo Easy"
                             src={Phone}
-                            width={400}
-                            height={400}
                             className="drop-shadow-2xl"
                             loader={loaderProp}
+                            width={270}
                         />
-                    </motion.div>
                 </ContentImage>
             </Content>
         </Container>

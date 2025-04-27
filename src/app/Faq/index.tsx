@@ -45,7 +45,7 @@ export function Faq() {
     ];
 
     return (
-        <Container>
+        <Container id="faq">
             <Content>
                 <ContentDivider>
                     <Divider />

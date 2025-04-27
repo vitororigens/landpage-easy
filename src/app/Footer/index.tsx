@@ -58,7 +58,7 @@ export function Footer() {
                             Soluções
                         </a>
                         <a href="#depoiments" className="text-purple-700 text-sm font-sans tracking-wider">
-                            Depoimentos
+                            Recursos
                         </a>
                         <a href="#faq" className="text-purple-700 text-sm font-sans tracking-wider">
                             FAQ

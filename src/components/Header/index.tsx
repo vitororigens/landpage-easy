@@ -21,7 +21,6 @@ export function Header() {
         { name: "Soluções", href: "#solutions" },
         { name: "Recursos", href: "#depoiments" },
         { name: "FAQ", href: "#faq" },
-        { name: "Contato", href: "#contact" },
     ];
 
     useEffect(() => {
